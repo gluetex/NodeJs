@@ -35,12 +35,6 @@ module.exports.signupPost = function (req, res) {
 }
 
 
-
-
-module.exports.userList = function (req, res) {
-    res.render('userList');
-}
-
 module.exports.deleteuser = function (req, res) {
 
     user.findByIdAndRemove({ username: req.params.userD }, function (err) {
